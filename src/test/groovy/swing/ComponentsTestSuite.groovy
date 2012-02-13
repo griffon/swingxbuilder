@@ -60,7 +60,7 @@ public class ComponentsTest extends GroovyTestCase {
             eyeDropperColorChooser: EyeDropperColorChooserPanel,
             findBar: JXFindBar,
             findPanel: JXFindPanel,
-            glassBox: JXGlassBox,
+            // glassBox: JXGlassBox,
             gradientChooser: JXGradientChooser,
             gradientPreviewPanel: GradientPreviewPanel,
             header: JXHeader,

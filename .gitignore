@@ -1,1 +1,7 @@
 .gradle
+build
+swingxbuilder.iml
+swingxbuilder.ipr
+swingxbuilder.iws
+.idea
+.gradle
