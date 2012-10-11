@@ -16,6 +16,7 @@
 
 apply plugin: 'groovy'
 apply plugin: 'maven'
+apply plugin: 'idea'
 
 sourceCompatibility = '1.6'
 targetCompatibility = '1.6'
@@ -30,16 +31,17 @@ repositories {
 }
 
 dependencies {
+    String swingxVersion = '1.6.4'
     groovy  "org.codehaus.groovy:groovy-all:$groovyVersion"
     compile "org.codehaus.groovy:groovy-all:$groovyVersion",
-            'org.swinglabs.swingx:swingx-core:1.6.3',
-            'org.swinglabs.swingx:swingx-graphics:1.6.3',
-            'org.swinglabs.swingx:swingx-painters:1.6.3',
-            'org.swinglabs.swingx:swingx-plaf:1.6.3',
-            'org.swinglabs.swingx:swingx-autocomplete:1.6.3',
-            'org.swinglabs.swingx:swingx-action:1.6.3',
-            'org.swinglabs.swingx:swingx-common:1.6.3',
-            'org.swinglabs.swingx:swingx-beaninfo:1.6.3',
+            "org.swinglabs.swingx:swingx-core:$swingxVersion",
+            "org.swinglabs.swingx:swingx-graphics:$swingxVersion",
+            "org.swinglabs.swingx:swingx-painters:$swingxVersion",
+            "org.swinglabs.swingx:swingx-plaf:$swingxVersion",
+            "org.swinglabs.swingx:swingx-autocomplete:$swingxVersion",
+            "org.swinglabs.swingx:swingx-action:$swingxVersion",
+            "org.swinglabs.swingx:swingx-common:$swingxVersion",
+            "org.swinglabs.swingx:swingx-beaninfo:$swingxVersion",
             'org.swinglabs:swing-worker:1.1',
             'net.java.dev.timingframework:timingframework:1.0'
     testCompile "junit:junit:4.8.2"

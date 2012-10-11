@@ -1,5 +1,5 @@
 /*
- * Copyright 2007 the original author or authors.
+ * Copyright 2007-2012 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -208,7 +208,7 @@ public class SwingXBuilder extends SwingBuilder {
         registerFactory("listComboBoxModel", new ListCBModelFactory())
         registerBeanFactory("dropShadowBorder", DropShadowBorder)
         registerBeanFactory("iconBorder", IconBorder)
-        registerBeanFactory("painterGlasspane", PainterGlasspane)
+        // registerBeanFactory("painterGlasspane", PainterGlasspane)
         registerBeanFactory("leaf", MultiSplitLayout.Leaf)
         registerBeanFactory("divider", MultiSplitLayout.Divider)
         registerFactory("split", new SplitFactory())
@@ -235,7 +235,7 @@ public class SwingXBuilder extends SwingBuilder {
     }
 
     def registerSwingxPainters() {
-        registerFactory("capsulePainter", new AbstractAreaPainterFactory(CapsulePainter))
+        // registerFactory("capsulePainter", new AbstractAreaPainterFactory(CapsulePainter))
         registerFactory("imagePainter", new AbstractAreaPainterFactory(ImagePainter))
         registerFactory("mattePainter", new AbstractAreaPainterFactory(MattePainter))
         registerFactory("shapePainter", new AbstractAreaPainterFactory(ShapePainter))
